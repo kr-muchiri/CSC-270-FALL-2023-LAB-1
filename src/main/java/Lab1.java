@@ -9,14 +9,25 @@ public class Lab1 {
 	   public static int squares(int n)
 	   {
 	      
-		   (if n <= 0) 
-		   	{return -1 ;}
-		   int sum_of_squares = 0 
-				   sum_of_squares = int_sum_of_squares + (i*i)
+		   if (n<=0) 
+		   {
+			   
+			   return -1 ;
+			   
+		   }
 		   
 		   
-	   
-	      return sum_of_squares;  
+		   int sum_of_squares = 0 ;
+		   
+		   
+		   for(int i=1 ; i<n+1 ; i++)
+		   {
+			   
+			   sum_of_squares += (i*i);
+			   
+		   }
+			   
+		   return sum_of_squares;  
 	   
 	   }
 
@@ -30,19 +41,23 @@ public class Lab1 {
 	   public static int maxIndex(int array[],int len)
 	   {
 	     
-	     (if len<= 0 )
-	     { return -1 ; }
-	     int maximum_number = array[0]
-	     int maximum_index = 0
-	     
-	     for ( int i = 0 ;  i < len ; i++ ) {
+	     if ( len<= 0 )
+	     { 
+	    	 return -1 ;
 	    	 
-	    	 maximum_number = array[i]
-	         maximum_index = i 
+	     }
+	     
+	     int maximum_number = array[0];
+	     int maximum_index = 0;
+	     
+	     for ( int i = 0 ; i < len ; i++ ) {
+	    	 
+	    	 maximum_number = array[i] ;
+	         maximum_index = i  ; 
 	    	 
 	     }
 	    	 
-	    return maximum_index
+	    return maximum_index ;
 	     
 	   }
 
@@ -56,7 +71,8 @@ public class Lab1 {
 	   {
 	     
 	      
-	      (if len<=0) {
+	      if ( len<=0) 
+	      {
 	    	  
 	    	  return false;
 	      }
