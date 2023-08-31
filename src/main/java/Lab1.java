@@ -8,16 +8,15 @@ public class Lab1 {
 	*/
 	   public static int squares(int n)
 	   {
-	      if(n<0) {
-	         return -1;}
 	      
-	      int total = 0;
-	      for(int i=1;i<=n;i++)
-	      {
-	         total = total + i*i;
-	      }
+		   (if n <= 0) 
+		   	{return -1 ;}
+		   int sum_of_squares = 0 
+				   sum_of_squares = int_sum_of_squares + (i*i)
+		   
+		   
 	   
-	      return total;  
+	      return sum_of_squares;  
 	   
 	   }
 
@@ -26,28 +25,25 @@ public class Lab1 {
 	* an integer that describes how many numbers are in the array.  
 	* The function will return the index(position) in the array with the largest number.
 	* If the array is empty or there is an error, return -1.
-	* If the maximum value is not unique, return the index of the first maximuim value.
+	* If the maximum value is not unique, return the index of the first maximum value.
 	*/
 	   public static int maxIndex(int array[],int len)
 	   {
-	      if(len <= 0)
-	      {  
-	         return -1; }
-	      
-	      int max = array[0];
-	      int maxIndex = 0;
-	      
-	      for(int i=1;i<len;i++)
-	      {
-	         if(array[i] > max)
-	         {
-	            max = array[i];
-	            maxIndex = i;
-	         }
-	      }
-	         
-	   
-	      return maxIndex;
+	     
+	     (if len<= 0 )
+	     { return -1 ; }
+	     int maximum_number = array[0]
+	     int maximum_index = 0
+	     
+	     for ( int i = 0 ;  i < len ; i++ ) {
+	    	 
+	    	 maximum_number = array[i]
+	         maximum_index = i 
+	    	 
+	     }
+	    	 
+	    return maximum_index
+	     
 	   }
 
 	/**
@@ -58,18 +54,16 @@ public class Lab1 {
 	*/
 	   public static boolean seek(int array[],int len,int target)
 	   {
-	      if(len <=0) 
-	      { 
-	         return false; }
-	         
-	      for (int i=0;i<len;i++)
-	      {
-	         if(array[i] == target)
-	         { 
-	            return true; }
+	     
+	      
+	      (if len<=0) {
+	    	  
+	    	  return false;
 	      }
 	      
-	      return false;
+	      boolean isFound = false
+	    		  
+	    for( int i=0, )
 	      
 	   }
 
