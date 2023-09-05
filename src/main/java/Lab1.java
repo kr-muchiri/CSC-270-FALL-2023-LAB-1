@@ -50,10 +50,13 @@ public class Lab1 {
 	     int maximum_number = array[0];
 	     int maximum_index = 0;
 	     
-	     for ( int i = 0 ; i < len ; i++ ) {
+	     for ( int i = 1 ; i < len ; i++ ) 
+	     {
 	    	 
-	    	 maximum_number = array[i] ;
-	         maximum_index = i  ; 
+	    	if (array[i] > maximum_number) 
+		{
+                maximum_number = array[i];
+                maximum_index = i;
 	    	 
 	     }
 	    	 
@@ -70,16 +73,22 @@ public class Lab1 {
 	   public static boolean seek(int array[],int len,int target)
 	   {
 	     
-	      
-	      if ( len<=0) 
+	      if (len <= 0) 
 	      {
-	    	  
-	    	  return false;
+		      
+            return false;
+             
 	      }
-	      
-	      boolean isFound = false
-	    		  
-	    for( int i=0, )
+
+        for (int i = 0; i < len; i++) 
+	{
+            if (array[i] == target) {
+                return true;
+            
+	    }
+        }
+		   
+        return false;	   
 	      
 	   }
 
@@ -98,8 +107,14 @@ public class Lab1 {
 	      { 
 	         return 0; 
 	      }
-	      if(n<3) { 
-	         return 1; }
+
+		if (n == 1 || n == 2)
+		{
+			
+        		return 1;
+			
+    		}
+	
 	      
 	      
 	      int A = 1;
